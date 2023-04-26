@@ -19,5 +19,6 @@ expo start
 
 
 * [React Native](https://reactnative.dev/docs/getting-started)
+* [React Expo](https://docs.expo.dev)
 * [React Navigation](https://reactnavigation.org/docs/getting-started//)
 * [React Native Vector Icons](https://oblador.github.io/react-native-vector-icons/)
