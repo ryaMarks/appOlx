@@ -1,5 +1,6 @@
 import React from 'react';
-import {View, Text, StyleSheet } from 'react-native'
+import {View, Text, StyleSheet, Image } from 'react-native'
+import noNotify from '../../../assets/img/modelos/sem_notificacoes.png'
 
 export default function Noticias() {
   return(
@@ -7,8 +8,11 @@ export default function Noticias() {
         <View style={styles.header}>
           <Text style={styles.textHeader}>Notificações</Text>
         </View>
-        <View style={{height: '92%'}}>
-          <Text> oi</Text>
+        <View style={{height: '92%', alignItems: 'center', justifyContent: 'center'}}>
+          <Image source={noNotify}/>
+          <View style={styles.fieldText}>
+            <Text style={styles.text}>Você não tem notificações.</Text>
+          </View>
         </View>
     </View>
   );
@@ -35,8 +39,11 @@ const styles = StyleSheet.create({
       fontSize: 19,
       fontWeight: 'bold'
     },
+    fieldText:{
+      padding: 10,
+    }, 
     text: {
-        fontSize: 25,
-        fontWeight: 'bold'
+      fontSize: 25,
+      fontWeight: 'bold',
     }
 });

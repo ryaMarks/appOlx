@@ -1,6 +1,5 @@
 import React from 'react';
 import {Text, View, StyleSheet, TouchableOpacity, Image} from 'react-native';
-import Imagem from '../../assets/img/modelos/isso.png'
 
 
 

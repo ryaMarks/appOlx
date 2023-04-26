@@ -1,5 +1,6 @@
 import React from 'react';
-import {View, Text, StyleSheet, TouchableOpacity } from 'react-native'
+import {View, Text, StyleSheet, TouchableOpacity } from 'react-native';
+import SimpleBtn from '../../Components/SimpleBtn';
 
 export default function Profile() {
   return(
@@ -8,62 +9,15 @@ export default function Profile() {
           <Text style={styles.textHeader}>Ola, Ryam Marques</Text>
         </View>
         <View style={styles.body}>
-
-        <TouchableOpacity style={{paddingTop: 10}}>
-            <View style={styles.btn}>
-              <Text style={styles.text}>Meu perfil</Text>
-            </View>
-          </TouchableOpacity>
-
-          <TouchableOpacity style={{paddingTop: 10}}>
-            <View style={styles.btn}>
-              <Text style={styles.text}>Meus anúncios</Text>
-            </View>
-          </TouchableOpacity>
-
-          <TouchableOpacity style={{paddingTop: 10}}>
-            <View style={styles.btn}>
-              <Text style={styles.text}>Favoritos</Text>
-            </View>
-          </TouchableOpacity>
-          
-          <TouchableOpacity style={{paddingTop: 10}}>
-            <View style={styles.btn}>
-              <Text style={styles.text}>Buscas salvas</Text>
-            </View>
-          </TouchableOpacity>
-
-          <TouchableOpacity style={{paddingTop: 10}}>
-            <View style={styles.btn}>
-              <Text style={styles.text}>Plano Profissional</Text>
-            </View>
-          </TouchableOpacity>
-
-          <TouchableOpacity style={{paddingTop: 10}}>
-            <View style={styles.btn}>
-              <Text style={styles.text}>Segurança e privacidade</Text>
-            </View>
-          </TouchableOpacity>
-
-          <TouchableOpacity style={{paddingTop: 10}}>
-            <View style={styles.btn}>
-              <Text style={styles.text}>Configurações</Text>
-            </View>
-          </TouchableOpacity>
-
-          <TouchableOpacity style={{paddingTop: 10}}>
-            <View style={styles.btn}>
-              <Text style={styles.text}>Informações</Text>
-            </View>
-          </TouchableOpacity>
-
-          <TouchableOpacity style={{paddingTop: 10}}>
-            <View style={styles.btn}>
-              <Text style={styles.text}>Sobre o aplicativo</Text>
-            </View>
-          </TouchableOpacity>
-
-          
+          <SimpleBtn label="Meu perfil"/>
+          <SimpleBtn label="Meus anúncios"/>
+          <SimpleBtn label="Favoritos"/>
+          <SimpleBtn label="Buscas salvas"/>
+          <SimpleBtn label="Plano Profissional"/>
+          <SimpleBtn label="Segurança e privacidade"/>
+          <SimpleBtn label="Configurações"/>
+          <SimpleBtn label="Informações"/>
+          <SimpleBtn label="Sobre o aplicativo"/>
         </View>
     </View>
   );
@@ -94,17 +48,5 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     width: '100%',
     padding: 10,
-  },
-  btn:{
-    backgroundColor: 'white',
-    height: 50,
-    borderRadius: 5,
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  text: {
-    fontSize: 19,
-    fontWeight: 'bold',
-    color: '#6d0ad6',
   }
 });
