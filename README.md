@@ -10,7 +10,7 @@ Clone da interface do aplicativo OLX, utilizando React Native, com navegação e
 - inicie o projeto com npm `expo start`.
 
 ```
-git clone git@github.com:ryaMarks/ControleEstoque.git
+git clone git@github.com:ryaMarks/appOlx.git
 npm install
 expo start
 ```
